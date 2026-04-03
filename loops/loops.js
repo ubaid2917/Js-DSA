@@ -35,27 +35,52 @@
 // }  
 
 
-// ---------------------------------
+//& ---------------------------------
+
 // 2. sum of natural numbers to n number; 
+
+// let num = Number(prompt("Enter a number"));
+
+// if (isNaN(num)) {
+//     console.log("Number is Invalid")
+// } else {
+//     if (num > 0) {
+//         let sum = 0;
+
+//         for (let i = 1; i <= num; i++) {
+//             sum = sum + i;
+//         }
+//         console.log(sum)
+//     }else{
+//         console.log("Number should be +ive")
+//     }
+// }
+
+//& --------------------------------
+
+
+//^ ---------------------------------
+
+// 3. factorial of natural numbers to n number; 
+
 let num = Number(prompt("Enter a number"));
 
 if (isNaN(num)) {
     console.log("Number is Invalid")
 } else {
     if (num > 0) {
-        let sum = 0;
+        let factorial = 1;
 
         for (let i = 1; i <= num; i++) {
-            sum = sum + i;
+            factorial = factorial * i;
         }
-        console.log(sum)
+        console.log(factorial)
     }else{
         console.log("Number should be +ive")
     }
 }
-// ---------------------------------
 
-
+//^ --------------------------------
 
 
 

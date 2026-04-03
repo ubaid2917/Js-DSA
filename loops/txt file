@@ -1,0 +1,70 @@
+// ---------------------------------
+// 2. while loop
+// Best when the number of iterations is not fixed in advance.
+
+let j = 0;
+while (j < 5) {
+  console.log("while loop:", j);
+  j++;
+}
+
+// DSA use case:
+// Two pointers / repeated checks while a condition is true.
+let left = 0;
+let right = arr.length - 1;
+
+while (left < right) {
+  console.log("pair:", arr[left], arr[right]);
+  left++;
+  right--;
+}
+
+// ---------------------------------
+// 3. do...while loop
+// Runs at least one time, then checks the condition.
+
+let k = 0;
+do {
+  console.log("do...while loop:", k);
+  k++;
+} while (k < 3);
+
+// ---------------------------------
+// Nested loops
+// Very common in DSA for comparing every pair or working with matrices.
+
+let nums = [1, 2, 3];
+
+for (let a = 0; a < nums.length; a++) {
+  for (let b = a + 1; b < nums.length; b++) {
+    console.log("pair from nested loop:", nums[a], nums[b]);
+  }
+}
+
+// ---------------------------------
+// Important DSA examples
+
+// Example 1: Sum of array
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
+console.log("sum:", sum);
+
+// Example 2: Find maximum element
+let max = arr[0];
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
+  }
+}
+console.log("max:", max);
+
+// Example 3: Count even numbers
+let evenCount = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    evenCount++;
+  }
+}
+console.log("even count:", evenCount);

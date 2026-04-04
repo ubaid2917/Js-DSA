@@ -83,6 +83,31 @@ if (isNaN(num)) {
 //^ --------------------------------
 
 
+//^ ---------------------------------
+
+// 3. factorial of natural numbers to n number; 
+
+let n = Number(prompt("Enter a number"));
+
+if (isNaN(n)) {
+    console.log("Number is Invalid")
+} else {
+    if (n > 0) {
+      
+        for (let i = 1; i <= n; i++) {
+            if(n % i === 0){
+                console.log(i)
+            }
+        }
+    }else{
+        console.log("Number should be +ive")
+    }
+}
+
+//^ --------------------------------
+
+
+
 
 // ---------------------------------
 // Time complexity idea:
